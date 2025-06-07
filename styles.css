@@ -1,7 +1,190 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
+/* Reset default margins and paddings */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.hero h1 {
+  font-size: 60px;
+  z-index: 1;
+  font-weight: 700;
+}
+
+.hero nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.hero nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero nav a:hover {
+  color: #aaa;
+}
+
+.hero .register-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .register-btn:hover {
+  background-color: #a050d6;
+}
+
+/* PRO SECTION */
+.pros {
+  background: linear-gradient(to bottom, #071629 0%, #071629 100%);
+  padding: 60px 20px 100px;
+  text-align: center;
+}
+
+.pros h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.pros h2 span {
+  color: #c271ff;
+}
+
+.pros .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pros .card {
+  text-align: center;
+  color: #fff;
+  max-width: 180px;
+}
+
+.pros .card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.pros .card h3 {
+  margin-bottom: 5px;
+}
+
+.pros .card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+/* QUOTE SECTION */
+.quote-section {
+  background-color: #c271ff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.quote-section .quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.quote-section img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-section blockquote {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.quote-section .author {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quote-section .job {
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 14px;
 }
 
