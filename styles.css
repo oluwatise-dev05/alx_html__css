@@ -279,4 +279,66 @@ header nav a {
   color: #c271ff;
   margin: 5px 0;
 }
+/* Membership Section */
+.membership {
+  background-color: #0d1b2a; /* dark navy background */
+  color: #ffffff; /* white text for contrast */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.membership h2 span {
+  color: #c084fc; /* vibrant purple for 'Free' */
+  font-weight: bold;
+}
+
+.membership .features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.membership .feature {
+  max-width: 200px;
+}
+
+.membership .feature .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #c084fc; /* purple icons */
+}
+
+.membership .feature h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.membership .feature p {
+  font-size: 0.9rem;
+  color: #d1d5db; /* light gray text */
+}
+
+.membership .register-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #c084fc, #a855f7); /* purple gradient */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.membership .register-btn:hover {
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+}
 
