@@ -341,4 +341,40 @@ header nav a {
 .membership .register-btn:hover {
   background: linear-gradient(90deg, #a855f7, #c084fc);
 }
+/* FAQ Section */
+.faq {
+  background-color: #ffffff; /* white background */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #0d1b2a; /* dark navy for title */
+}
+
+.faq .faq-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq .faq-item h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0d1b2a;
+}
+
+.faq .faq-item p {
+  font-size: 0.95rem;
+  color: #4b5563; /* muted gray for text */
+  line-height: 1.6;
+}
 
