@@ -377,4 +377,50 @@ header nav a {
   color: #4b5563; /* muted gray for text */
   line-height: 1.6;
 }
+/* Footer Section */
+.footer {
+  background-color: #0d1b2a; /* dark navy */
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .footer-left img {
+  height: 30px; /* adjust to fit smiley icon */
+}
+
+.footer .footer-left span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.footer .footer-center {
+  color: #6b7280; /* gray text */
+  font-size: 0.875rem;
+}
+
+.footer .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .footer-right a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.footer .footer-right a:hover {
+  opacity: 0.7;
+}
 
